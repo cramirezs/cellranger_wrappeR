@@ -16,7 +16,7 @@ feature_ref:
 # Metadata with additional columns prefixed like aggr.NAME_OF_AGGR and values equal to 1
 aggregation: "./data/metadata_library.csv"
 job: # PBS settings
-  template: "./routine_template.sh"
+  template: "https://raw.githubusercontent.com/vijaybioinfo/cellranger_wrappeR/main/routine_template.sh"
   walltime: {count: 50:00:00, vdj: 40:00:00, fbarcode: 24:00:00, aggr: 24:00:00}
   mem: {count: 70gb, vdj: 40gb, fbarcode: 32gb, aggr: 30gb}
   ppn: {count: 10, vdj: 4, fbarcode: 4, aggr: 6}
